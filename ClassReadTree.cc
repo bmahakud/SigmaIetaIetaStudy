@@ -414,9 +414,9 @@ public :
    int BestPhoton(); 
    
    int recomputeNJets(int iPh=0);
-   int recomputeHT(int iPh=0);
-   int recomputeMHT(int iPh=0);
-   int recomputeDPhiI(int iJet,int iPh=0);
+   double recomputeHT(int iPh=0);
+   double recomputeMHT(int iPh=0);
+   double recomputeDPhiI(int iJet,int iPh=0);
    
    
 
@@ -1174,7 +1174,7 @@ return NJetstmp;
 //////////////////////////////////////////////////////////////////
 
 
-int ClassReadTree::recomputeHT(int iPh){
+double ClassReadTree::recomputeHT(int iPh){
 
 
   int HTtmp=0;
@@ -1209,7 +1209,7 @@ return HTtmp;
 
 
 
-int ClassReadTree::recomputeMHT(int iPh){
+double ClassReadTree::recomputeMHT(int iPh){
 
 
    TLorentzVector MHTvector(0,0,0,0);
@@ -1244,7 +1244,7 @@ return MHTvector.Pt();
 //////////////////////////////////////////////////////
 
 
-int ClassReadTree::recomputeDPhiI(int iJet,int iPh){
+double ClassReadTree::recomputeDPhiI(int iJet,int iPh){
 
 
   TLorentzVector MHTvector(0,0,0,0);
