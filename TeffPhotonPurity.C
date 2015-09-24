@@ -11,7 +11,7 @@
 #include "ReadTree.cc"
 #include "PlotHisto.C"
 #include "SetStyle.C"
-void TestContaminatio(){
+void TeffPhotonPurity(){
 
 
     TStyle *gStyle = new TStyle("gStyle","Style for P-TDR");
